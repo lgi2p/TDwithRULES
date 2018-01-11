@@ -38,8 +38,8 @@ For repeat the experiments you have to follow the following steps:
 ## OUTPUTs:
  - all the results file will be stored in the directory indicated in absolute\_path\_of\_results\_dir parameter.
  - they can be summarised writing the following command line:
-  	> python analysis\_res\_eswc.py predicate absolute\_path\_of\_required\_files\_dir absolute\_path\_of\_results\_dir gamma\_list
-   Example:
-	genre D:/thesis\_code/TDO/ D:/results\_rules\_8\_jan/ True True [0.1,0.9]
+    \> python analysis\_res\_eswc.py predicate absolute\_path\_of\_required\_files\_dir absolute\_path\_of\_results\_dir gamma\_list
+    Example:
+    \> python analysis\_res\_eswc.py genre D:/thesis\_code/TDO/ D:/results\_rules\_8\_jan/ True True [0.1,0.9]
  
 
