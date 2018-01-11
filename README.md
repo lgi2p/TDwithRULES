@@ -28,18 +28,18 @@ For repeat the experiments you have to follow the following steps:
  
 ## RUN the experiments
  - open the terminal and move in the "experiments" folder contained in the main project folder
- - write the following command line
-	> python experiments_eswc.py predicate Sums&Rules_flag AdaptedSums&Rules_flag gamma_list absolute_path_of_required_files_dir absolute_path_of_results_dir max_iteration_number
-	where predicate specifies the predicate to test, Sums&Rules_flag == True and AdaptedSums&Rules_flag == True specify that both model will be tested.
-   Example:
-	> python experiments_eswc.py genre True False [0.0,0.1,0.9] D:/thesis_code/TDO/ D:/results_rules_8_jan/ 20
+ - write the following command line:  
+     \> python experiments\_eswc.py *predicate Sums&Rules\_flag AdaptedSums&Rules\_flag gamma\_list absolute\_path\_of\_required\_files\_dir absolute\_path\_of\_results\_dir max\_iteration\_number*  
+	where *predicate* specifies the predicate to test, *Sums&Rules\_flag* == True and *AdaptedSums&Rules\_flag* == True specify that both model will be tested.  
+    Example:  
+    \> python experiments\_eswc.py genre True False [0.0,0.1,0.9] D:/thesis\_code/TDO/ D:/results\_rules\_8\_jan/ 20 
  
   
 ## OUTPUTs:
- - all the results file will be stored in the directory indicated in absolute_path_of_results_dir parameter.
+ - all the results file will be stored in the directory indicated in absolute\_path\_of\_results\_dir parameter.
  - they can be summarised writing the following command line:
-  	> python analysis_res_eswc.py predicate absolute_path_of_required_files_dir absolute_path_of_results_dir gamma_list
+  	> python analysis\_res\_eswc.py predicate absolute\_path\_of\_required\_files\_dir absolute\_path\_of\_results\_dir gamma\_list
    Example:
-	genre D:/thesis_code/TDO/ D:/results_rules_8_jan/ True True [0.1,0.9]
+	genre D:/thesis\_code/TDO/ D:/results\_rules\_8\_jan/ True True [0.1,0.9]
  
 
