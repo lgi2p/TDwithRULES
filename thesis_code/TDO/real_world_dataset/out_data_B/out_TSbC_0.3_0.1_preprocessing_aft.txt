@@ -1,0 +1,480 @@
+vladimir horowitz and was bornbirthPlace	http://dbpedia.org/resource/United_States
+john lennon and was bornbirthPlace	http://dbpedia.org/resource/Liverpool
+robert baden-powell, 1st baron baden-powell and was bornbirthPlace	http://dbpedia.org/resource/Paddington
+ella fitzgerald and was bornbirthPlace	http://dbpedia.org/resource/Newport_News,_Virginia
+pascal feindouno and was bornbirthPlace	http://dbpedia.org/resource/France
+paul robeson and was bornbirthPlace	http://dbpedia.org/resource/Princeton,_New_Jersey
+el hadji diouf and was bornbirthPlace	http://dbpedia.org/resource/Dakar
+andy warhol and was bornbirthPlace	http://dbpedia.org/resource/Pittsburgh
+peter scott and was bornbirthPlace	http://dbpedia.org/resource/London
+leo bertos and was bornbirthPlace	http://dbpedia.org/resource/Wellington
+aldous huxley and was bornbirthPlace	http://dbpedia.org/resource/Godalming
+john collins and was bornbirthPlace	http://dbpedia.org/resource/Layton,_Utah
+william h. seward and was bornbirthPlace	http://dbpedia.org/resource/Layton,_Utah
+ike turner and was bornbirthPlace	http://dbpedia.org/resource/Clarksdale,_Mississippi
+john bernard philip humbert, 9th count de salis-soglio and was bornbirthPlace	http://dbpedia.org/ontology/City
+daniel passarella and was bornbirthPlace	http://dbpedia.org/resource/Buenos_Aires_Province
+george harrison and was bornbirthPlace	http://dbpedia.org/resource/Liverpool
+gabriel cichero and was bornbirthPlace	http://dbpedia.org/resource/Caracas
+david kemp and was bornbirthPlace	http://dbpedia.org/resource/Melbourne
+joseph priestley and was bornbirthPlace	http://dbpedia.org/resource/Leeds
+john limniatis and was bornbirthPlace	http://dbpedia.org/resource/Canada
+nicolas anelka and was bornbirthPlace	http://dbpedia.org/resource/Le_Chesnay
+danny califf and was bornbirthPlace	http://dbpedia.org/resource/California
+didier six and was bornbirthPlace	http://dbpedia.org/resource/Lille
+neil redfearn and was bornbirthPlace	http://dbpedia.org/resource/Dewsbury
+piggy ward and was bornbirthPlace	http://dbpedia.org/resource/Pennsylvania
+youness bengelloun and was bornbirthPlace	http://dbpedia.org/resource/Paris
+ricardo gomes and was bornbirthPlace	http://dbpedia.org/resource/Portugal
+micky adams and was bornbirthPlace	http://dbpedia.org/resource/Sheffield
+mary pickford and was bornbirthPlace	http://dbpedia.org/resource/Toronto
+dominic foley and was bornbirthPlace	http://dbpedia.org/resource/Cork_(city)
+daisuke matsui and was bornbirthPlace	http://dbpedia.org/resource/Kyoto
+l. ron hubbard and was bornbirthPlace	http://dbpedia.org/ontology/City
+joe guyon and was bornbirthPlace	http://dbpedia.org/resource/White_Earth,_Minnesota
+albert luque and was bornbirthPlace	http://dbpedia.org/resource/Catalonia
+mircea rednic and was bornbirthPlace	http://dbpedia.org/resource/Hunedoara
+sakis rouvas and was bornbirthPlace	http://dbpedia.org/resource/Corfu
+enrico fermi and was bornbirthPlace	http://dbpedia.org/resource/Rome
+paul caligiuri and was bornbirthPlace	http://dbpedia.org/resource/Orange_County,_California
+gerardo torrado and was bornbirthPlace	http://dbpedia.org/resource/Mexico_City
+michael laudrup and was bornbirthPlace	http://dbpedia.org/resource/Copenhagen
+martin van buren and was bornbirthPlace	http://dbpedia.org/resource/Kinderhook_(town),_New_York
+zinedine zidane and was bornbirthPlace	http://dbpedia.org/resource/Marseille
+serge gainsbourg and was bornbirthPlace	http://dbpedia.org/resource/Paris
+william mckinley and was bornbirthPlace	http://dbpedia.org/resource/Niles,_Ohio
+gheorghe asachi and was bornbirthPlace	http://dbpedia.org/resource/Hertsa
+frank de boer and was bornbirthPlace	http://dbpedia.org/resource/Amsterdam
+libby kosmala and was bornbirthPlace	http://dbpedia.org/resource/Adelaide
+ira davis and was bornbirthPlace	http://dbpedia.org/ontology/Country
+guus hiddink and was bornbirthPlace	http://dbpedia.org/resource/Varsseveld
+johan cruyff and was bornbirthPlace	http://dbpedia.org/resource/Amsterdam
+zamfir arbore and was bornbirthPlace	http://dbpedia.org/resource/Europe
+malcolm x and was bornbirthPlace	http://dbpedia.org/resource/Omaha,_Nebraska
+radamel falcao and was bornbirthPlace	http://dbpedia.org/resource/England
+jesse helms and was bornbirthPlace	http://dbpedia.org/resource/Monroe,_North_Carolina
+luciano figueroa and was bornbirthPlace	http://dbpedia.org/resource/Santa_Fe,_Argentina
+luca toni and was bornbirthPlace	http://dbpedia.org/resource/Florence
+michael jackson and was bornbirthPlace	http://dbpedia.org/resource/Gary,_Indiana
+john wayne and was bornbirthPlace	http://dbpedia.org/resource/Marion,_Indiana
+orson welles and was bornbirthPlace	http://dbpedia.org/ontology/City
+miles davis and was bornbirthPlace	http://dbpedia.org/resource/Alton,_Illinois
+christy mathewson and was bornbirthPlace	http://dbpedia.org/resource/Factoryville,_Pennsylvania
+hussein yasser and was bornbirthPlace	http://dbpedia.org/resource/Doha
+sandu tudor and was bornbirthPlace	http://dbpedia.org/resource/Romania
+susan sontag and was bornbirthPlace	http://dbpedia.org/resource/New_York
+sri aurobindo and was bornbirthPlace	http://dbpedia.org/resource/Kolkata
+dixie walker and was bornbirthPlace	http://dbpedia.org/resource/Bellefonte,_Pennsylvania
+costinha and was bornbirthPlace	http://dbpedia.org/resource/Lisbon
+edward elgar and was bornbirthPlace	http://dbpedia.org/resource/Worcester
+margaret thatcher and was bornbirthPlace	http://dbpedia.org/resource/Grantham
+sargent shriver and was bornbirthPlace	http://dbpedia.org/resource/Westminster,_Maryland
+patrick kluivert and was bornbirthPlace	http://dbpedia.org/resource/Amsterdam
+frank stapleton and was bornbirthPlace	http://dbpedia.org/ontology/Country
+jerry falwell and was bornbirthPlace	http://dbpedia.org/resource/Lynchburg,_Virginia
+lyman lemnitzer and was bornbirthPlace	http://dbpedia.org/resource/Honesdale,_Pennsylvania
+aaron copland and was bornbirthPlace	http://dbpedia.org/resource/Brooklyn
+peter barnes and was bornbirthPlace	http://dbpedia.org/resource/London
+audrey hepburn and was bornbirthPlace	http://dbpedia.org/resource/Ixelles
+elliott smith and was bornbirthPlace	http://dbpedia.org/resource/Omaha,_Nebraska
+dean martin and was bornbirthPlace	http://dbpedia.org/resource/Steubenville,_Ohio
+george brunet and was bornbirthPlace	http://dbpedia.org/resource/Houghton,_Michigan
+kaba diawara and was bornbirthPlace	http://dbpedia.org/resource/Guinea
+janis joplin and was bornbirthPlace	http://dbpedia.org/resource/Port_Arthur,_Texas
+benito mussolini and was bornbirthPlace	http://dbpedia.org/resource/Predappio
+keith alexander and was bornbirthPlace	http://dbpedia.org/resource/Australia
+robert e. lee and was bornbirthPlace	http://dbpedia.org/resource/Stratford_Hall_(plantation)
+alexandru robot and was bornbirthPlace	http://dbpedia.org/resource/Bucharest
+julie london and was bornbirthPlace	http://dbpedia.org/resource/Santa_Rosa,_California
+justo villar and was bornbirthPlace	http://dbpedia.org/resource/Paraguay
+strom thurmond and was bornbirthPlace	http://dbpedia.org/resource/Edgefield,_South_Carolina
+river phoenix and was bornbirthPlace	http://dbpedia.org/resource/California
+ricardo esteves and was bornbirthPlace	http://dbpedia.org/resource/Lisbon
+giovanni van bronckhorst and was bornbirthPlace	http://dbpedia.org/resource/Rotterdam
+arie haan and was bornbirthPlace	http://dbpedia.org/resource/Oldambt_(municipality)
+davide xausa and was bornbirthPlace	http://dbpedia.org/resource/Vancouver
+john montgomery ward and was bornbirthPlace	http://dbpedia.org/resource/Bellefonte,_Pennsylvania
+ali daei and was bornbirthPlace	http://dbpedia.org/ontology/Country
+fritz emeran and was bornbirthPlace	http://dbpedia.org/resource/France
+erich raeder and was bornbirthPlace	http://dbpedia.org/resource/Wandsbek
+mahamadou diarra and was bornbirthPlace	http://dbpedia.org/resource/Bamako
+claudio caniggia and was bornbirthPlace	http://dbpedia.org/resource/Buenos_Aires
+erin mcleod and was bornbirthPlace	http://dbpedia.org/resource/Spain
+claudio ranieri and was bornbirthPlace	http://dbpedia.org/resource/Rome
+maurice edu and was bornbirthPlace	http://dbpedia.org/resource/Fontana,_California
+stephen constantine and was bornbirthPlace	http://dbpedia.org/resource/London
+sani kaita and was bornbirthPlace	http://dbpedia.org/resource/Lagos
+spencer cavendish, 8th duke of devonshire and was bornbirthPlace	http://dbpedia.org/resource/France
+sam houston and was bornbirthPlace	http://dbpedia.org/resource/Texas
+eddy berdusco and was bornbirthPlace	http://dbpedia.org/resource/Keynsham
+sylvia plath and was bornbirthPlace	http://dbpedia.org/resource/Jamaica_Plain
+philippe troussier and was bornbirthPlace	http://dbpedia.org/resource/Paris
+umberto ii of italy and was bornbirthPlace	http://dbpedia.org/resource/Naples
+tudor arghezi and was bornbirthPlace	http://dbpedia.org/resource/Bucharest
+kylie minogue and was bornbirthPlace	http://dbpedia.org/resource/Melbourne
+andrew johnson and was bornbirthPlace	http://dbpedia.org/resource/Raleigh,_North_Carolina
+tom parrott and was bornbirthPlace	http://dbpedia.org/resource/Portland,_Oregon
+paul newman and was bornbirthPlace	http://dbpedia.org/resource/Shaker_Heights,_Ohio
+henrik larsson and was bornbirthPlace	http://dbpedia.org/resource/Helsingborg
+jack lemmon and was bornbirthPlace	http://dbpedia.org/resource/Newton,_Massachusetts
+jaime penedo and was bornbirthPlace	http://dbpedia.org/resource/Panama_City
+brent sancho and was bornbirthPlace	http://dbpedia.org/resource/Port_of_Spain
+andrew bertie and was bornbirthPlace	http://dbpedia.org/resource/London
+anselm of canterbury and was bornbirthPlace	http://dbpedia.org/resource/Aosta
+luis tejada and was bornbirthPlace	http://dbpedia.org/resource/Panama_City
+rowan williams and was bornbirthPlace	http://dbpedia.org/resource/Swansea
+francis joseph and was bornbirthPlace	http://dbpedia.org/resource/Vienna
+william aitken and was bornbirthPlace	http://dbpedia.org/resource/Republic_of_Ireland
+jorge solari and was bornbirthPlace	http://dbpedia.org/resource/Argentina
+jorge campos and was bornbirthPlace	http://dbpedia.org/resource/Acapulco
+herbert hoover and was bornbirthPlace	http://dbpedia.org/resource/West_Branch,_Iowa
+gregg berhalter and was bornbirthPlace	http://dbpedia.org/resource/Englewood,_New_Jersey
+john gielgud and was bornbirthPlace	http://dbpedia.org/resource/South_Kensington
+gustavo franchin schiavolin and was bornbirthPlace	http://dbpedia.org/resource/Gelsenkirchen
+ronaldo and was bornbirthPlace	http://dbpedia.org/resource/Funchal
+didier deschamps and was bornbirthPlace	http://dbpedia.org/resource/Bayonne
+tony battersby and was bornbirthPlace	http://dbpedia.org/resource/England
+tab ramos and was bornbirthPlace	http://dbpedia.org/resource/New_Jersey
+manuel pellegrini and was bornbirthPlace	http://dbpedia.org/resource/Chile
+obafemi martins and was bornbirthPlace	http://dbpedia.org/resource/Lagos
+henry paget, 1st marquess of anglesey and was bornbirthPlace	http://dbpedia.org/resource/London
+harry bright and was bornbirthPlace	http://dbpedia.org/resource/Kansas_City,_Missouri
+mysterious walker and was bornbirthPlace	http://dbpedia.org/resource/California
+michael bradley (soccer) and was bornbirthPlace	http://dbpedia.org/resource/California
+ernst happel and was bornbirthPlace	http://dbpedia.org/resource/Austria
+james k. polk and was bornbirthPlace	http://dbpedia.org/resource/United_States
+richard nixon and was bornbirthPlace	http://dbpedia.org/resource/Yorba_Linda,_California
+johnny cash and was bornbirthPlace	http://dbpedia.org/resource/Kingsland,_Arkansas
+stanley jackson and was bornbirthPlace	http://dbpedia.org/resource/United_Kingdom
+sesto pals and was bornbirthPlace	http://dbpedia.org/resource/Romania
+trevor benjamin and was bornbirthPlace	http://dbpedia.org/resource/United_Kingdom
+eric djemba-djemba and was bornbirthPlace	http://dbpedia.org/ontology/Country
+carl valentine and was bornbirthPlace	http://dbpedia.org/resource/Maryland
+pope gregory i and was bornbirthPlace	http://dbpedia.org/resource/Rome
+warren spahn and was bornbirthPlace	http://dbpedia.org/resource/Buffalo,_New_York
+kalu uche and was bornbirthPlace	http://dbpedia.org/resource/Nigeria
+chelsea stewart and was bornbirthPlace	http://dbpedia.org/resource/Denver
+hulk and was bornbirthPlace	http://dbpedia.org/resource/Augusta,_Georgia
+maniche and was bornbirthPlace	http://dbpedia.org/resource/Lisbon
+paul bowles and was bornbirthPlace	http://dbpedia.org/resource/Jamaica,_Queens
+archibald wavell, 1st earl wavell and was bornbirthPlace	http://dbpedia.org/resource/Thanjavur
+ronald reagan and was bornbirthPlace	http://dbpedia.org/resource/Tampico,_Illinois
+desmond armstrong and was bornbirthPlace	http://dbpedia.org/resource/Washington,_D.C.
+abraham lincoln and was bornbirthPlace	http://dbpedia.org/resource/Hodgenville,_Kentucky
+aleksandar bajevski and was bornbirthPlace	http://dbpedia.org/ontology/City
+helmut senekowitsch and was bornbirthPlace	http://dbpedia.org/resource/Austria
+jean cocteau and was bornbirthPlace	http://dbpedia.org/resource/Maisons-Laffitte
+marquis de condorcet and was bornbirthPlace	http://dbpedia.org/resource/Ribemont
+wynton rufer and was bornbirthPlace	http://dbpedia.org/resource/Wellington
+landon donovan and was bornbirthPlace	http://dbpedia.org/resource/Ontario,_California
+richard kingson and was bornbirthPlace	http://dbpedia.org/resource/Accra
+steve jobs and was bornbirthPlace	http://dbpedia.org/resource/San_Francisco
+maicon sisenando and was bornbirthPlace	http://dbpedia.org/resource/Brazil
+rainier iii, prince of monaco and was bornbirthPlace	http://dbpedia.org/resource/Monaco
+david trezeguet and was bornbirthPlace	http://dbpedia.org/resource/Rouen
+jay bothroyd and was bornbirthPlace	http://dbpedia.org/resource/Islington
+pepe reina and was bornbirthPlace	http://dbpedia.org/resource/Madrid
+carl medjani and was bornbirthPlace	http://dbpedia.org/resource/France
+michel bastos and was bornbirthPlace	http://dbpedia.org/resource/Gelsenkirchen
+bernardo vasconcelos and was bornbirthPlace	http://dbpedia.org/resource/Portugal
+stan yerkes and was bornbirthPlace	http://dbpedia.org/resource/Philadelphia
+john updike and was bornbirthPlace	http://dbpedia.org/resource/Reading,_Pennsylvania
+nat king cole and was bornbirthPlace	http://dbpedia.org/resource/Montgomery,_Alabama
+frankie hejduk and was bornbirthPlace	http://dbpedia.org/resource/California
+jackie robinson and was bornbirthPlace	http://dbpedia.org/resource/Cairo,_Georgia
+roy orbison and was bornbirthPlace	http://dbpedia.org/resource/Vernon,_Texas
+eugene v. debs and was bornbirthPlace	http://dbpedia.org/resource/Vernon,_Texas
+richard hastings and was bornbirthPlace	http://dbpedia.org/ontology/City
+selena and was bornbirthPlace	http://dbpedia.org/resource/Grand_Prairie,_Texas
+paul tillich and was bornbirthPlace	http://dbpedia.org/resource/Germany
+eduardo hurtado and was bornbirthPlace	http://dbpedia.org/resource/Ecuador
+camille paglia and was bornbirthPlace	http://dbpedia.org/resource/Endicott,_New_York
+leonard bernstein and was bornbirthPlace	http://dbpedia.org/resource/Lawrence,_Massachusetts
+thomas edison and was bornbirthPlace	http://dbpedia.org/ontology/Country
+frank worthington and was bornbirthPlace	http://dbpedia.org/resource/Halifax,_West_Yorkshire
+whitney houston and was bornbirthPlace	http://dbpedia.org/resource/Newark,_New_Jersey
+cristian portilla and was bornbirthPlace	http://dbpedia.org/resource/Santander,_Spain
+richard pacquette and was bornbirthPlace	http://dbpedia.org/resource/Budapest
+luiz felipe scolari and was bornbirthPlace	http://dbpedia.org/resource/Passo_Fundo
+konstantin rokossovsky and was bornbirthPlace	http://dbpedia.org/resource/Russia
+khalid boulahrouz and was bornbirthPlace	http://dbpedia.org/resource/Maassluis
+ruud krol and was bornbirthPlace	http://dbpedia.org/resource/Amsterdam
+samuel hoare, 1st viscount templewood and was bornbirthPlace	http://dbpedia.org/resource/London
+captain beefheart and was bornbirthPlace	http://dbpedia.org/resource/Glendale,_California
+t-bone walker and was bornbirthPlace	http://dbpedia.org/resource/Linden,_Texas
+james g. blaine and was bornbirthPlace	http://dbpedia.org/resource/Linden,_Texas
+stephen sunday and was bornbirthPlace	http://dbpedia.org/resource/Lagos
+oliver neuville and was bornbirthPlace	http://dbpedia.org/resource/Locarno
+roger lemerre and was bornbirthPlace	http://dbpedia.org/resource/Marseille
+john william strutt, 3rd baron rayleigh and was bornbirthPlace	http://dbpedia.org/resource/Maldon,_Essex
+paulo autuori and was bornbirthPlace	http://dbpedia.org/resource/Rio_de_Janeiro_(state)
+david vaudreuil and was bornbirthPlace	http://dbpedia.org/ontology/City
+george wallace and was bornbirthPlace	http://dbpedia.org/resource/Alabama
+marco etcheverry and was bornbirthPlace	http://dbpedia.org/ontology/Continent
+elmo zumwalt and was bornbirthPlace	http://dbpedia.org/resource/San_Francisco
+john coltrane and was bornbirthPlace	http://dbpedia.org/resource/Hamlet,_North_Carolina
+henri michel and was bornbirthPlace	http://dbpedia.org/resource/France
+sam ayorinde and was bornbirthPlace	http://dbpedia.org/resource/Lagos
+carlo ancelotti and was bornbirthPlace	http://dbpedia.org/resource/United_Kingdom
+carlos alberto torres and was bornbirthPlace	http://dbpedia.org/resource/Rio_de_Janeiro
+mauro camoranesi and was bornbirthPlace	http://dbpedia.org/resource/Tandil
+mehdi nafti and was bornbirthPlace	http://dbpedia.org/resource/Toulouse
+samuel okunowo and was bornbirthPlace	http://dbpedia.org/resource/Nigeria
+jovan kirovski and was bornbirthPlace	http://dbpedia.org/ontology/Continent
+tiago costa and was bornbirthPlace	http://dbpedia.org/resource/Lisbon
+william ewart gladstone and was bornbirthPlace	http://dbpedia.org/resource/Liverpool
+jean-paul sartre and was bornbirthPlace	http://dbpedia.org/resource/Paris
+mutiu adepoju and was bornbirthPlace	http://dbpedia.org/resource/Ibadan
+ralph glaze and was bornbirthPlace	http://dbpedia.org/resource/Denver
+ian thorpe and was bornbirthPlace	http://dbpedia.org/ontology/Country
+benjamin britten and was bornbirthPlace	http://dbpedia.org/resource/England
+john j. pershing and was bornbirthPlace	http://dbpedia.org/resource/Missouri
+richard pryor and was bornbirthPlace	http://dbpedia.org/resource/Peoria,_Illinois
+andrey korotayev and was bornbirthPlace	http://dbpedia.org/resource/Moscow
+hubert humphrey and was bornbirthPlace	http://dbpedia.org/ontology/City
+charles mingus and was bornbirthPlace	http://dbpedia.org/resource/Nogales,_Arizona
+marius niculae and was bornbirthPlace	http://dbpedia.org/resource/Romania
+dwight d. eisenhower and was bornbirthPlace	http://dbpedia.org/resource/Denison,_Texas
+cuca and was bornbirthPlace	http://dbpedia.org/resource/Puerto_Rico
+manuel neira and was bornbirthPlace	http://dbpedia.org/resource/Chile
+john f. kennedy and was bornbirthPlace	http://dbpedia.org/resource/Brookline,_Massachusetts
+sergio romero and was bornbirthPlace	http://dbpedia.org/resource/Argentina
+jorge costa and was bornbirthPlace	http://dbpedia.org/resource/Brazil
+billy preston and was bornbirthPlace	http://dbpedia.org/ontology/AdministrativeRegion
+onandi lowe and was bornbirthPlace	http://dbpedia.org/resource/Kingston,_Jamaica
+andrew ornoch and was bornbirthPlace	http://dbpedia.org/resource/Canada
+leo fortune-west and was bornbirthPlace	http://dbpedia.org/resource/Stratford,_London
+elena bacaloglu and was bornbirthPlace	http://dbpedia.org/resource/Bucharest
+ariza makukula and was bornbirthPlace	http://dbpedia.org/resource/Kinshasa
+victor obinna and was bornbirthPlace	http://dbpedia.org/resource/Jos
+lyndon b. johnson and was bornbirthPlace	http://dbpedia.org/resource/Texas
+john guidetti and was bornbirthPlace	http://dbpedia.org/ontology/Country
+henry gutierrez and was bornbirthPlace	http://dbpedia.org/resource/United_States
+diego simeone and was bornbirthPlace	http://dbpedia.org/resource/Madrid
+ronaldinho and was bornbirthPlace	http://dbpedia.org/ontology/Continent
+edward plunkett, 18th baron of dunsany and was bornbirthPlace	http://dbpedia.org/resource/London
+geoff aunger and was bornbirthPlace	http://dbpedia.org/resource/Red_Deer,_Alberta
+jefferson louis and was bornbirthPlace	http://dbpedia.org/resource/Harrow,_London
+pim fortuyn and was bornbirthPlace	http://dbpedia.org/resource/Driehuis
+nell carter and was bornbirthPlace	http://dbpedia.org/resource/Birmingham,_Alabama
+nelson rockefeller and was bornbirthPlace	http://dbpedia.org/resource/Bar_Harbor,_Maine
+deke slayton and was bornbirthPlace	http://dbpedia.org/resource/Sparta,_Wisconsin
+shulamit aloni and was bornbirthPlace	http://dbpedia.org/resource/Tel_Aviv
+moses ashikodi and was bornbirthPlace	http://dbpedia.org/resource/Camberley
+sonny anderson and was bornbirthPlace	http://dbpedia.org/resource/United_States
+brad guzan and was bornbirthPlace	http://dbpedia.org/resource/England
+javier mascherano and was bornbirthPlace	http://dbpedia.org/ontology/Country
+sam allardyce and was bornbirthPlace	http://dbpedia.org/resource/Dudley
+richard haldane, 1st viscount haldane and was bornbirthPlace	http://dbpedia.org/resource/Cairns
+harry s. truman and was bornbirthPlace	http://dbpedia.org/resource/Lamar,_Missouri
+walt disney and was bornbirthPlace	http://dbpedia.org/resource/Chicago
+bill hicks and was bornbirthPlace	http://dbpedia.org/resource/Valdosta,_Georgia
+george santayana and was bornbirthPlace	http://dbpedia.org/resource/Madrid
+sol bamba and was bornbirthPlace	http://dbpedia.org/resource/Ivry-sur-Seine
+harold wilson and was bornbirthPlace	http://dbpedia.org/resource/Huddersfield
+albert riera and was bornbirthPlace	http://dbpedia.org/resource/Manacor
+rohan ricketts and was bornbirthPlace	http://dbpedia.org/resource/London
+alejandro cichero and was bornbirthPlace	http://dbpedia.org/resource/Caracas
+nolberto solano and was bornbirthPlace	http://dbpedia.org/resource/Callao
+brad friedel and was bornbirthPlace	http://dbpedia.org/resource/United_Kingdom
+tim howard and was bornbirthPlace	http://dbpedia.org/resource/North_Brunswick,_New_Jersey
+george marshall and was bornbirthPlace	http://dbpedia.org/ontology/City
+kurt cobain and was bornbirthPlace	http://dbpedia.org/resource/Aberdeen,_Washington
+derek dougan and was bornbirthPlace	http://dbpedia.org/resource/Belfast
+zora neale hurston and was bornbirthPlace	http://dbpedia.org/resource/Notasulga,_Alabama
+stanley baldwin and was bornbirthPlace	http://dbpedia.org/resource/Bewdley
+lionel messi and was bornbirthPlace	http://dbpedia.org/resource/Rosario,_Santa_Fe
+diego lugano and was bornbirthPlace	http://dbpedia.org/resource/Uruguay
+siyabonga nomvethe and was bornbirthPlace	http://dbpedia.org/resource/KwaMashu
+george mcgovern and was bornbirthPlace	http://dbpedia.org/ontology/City
+albert ferrer and was bornbirthPlace	http://dbpedia.org/resource/Barcelona
+amado guevara and was bornbirthPlace	http://dbpedia.org/resource/Tegucigalpa
+rachid tiberkanine and was bornbirthPlace	http://dbpedia.org/resource/Belgium
+arthur conan doyle and was bornbirthPlace	http://dbpedia.org/resource/England
+peter schmeichel and was bornbirthPlace	http://dbpedia.org/resource/Gladsaxe_Municipality
+yakubu aiyegbeni and was bornbirthPlace	http://dbpedia.org/resource/Benin_City
+lucille ball and was bornbirthPlace	http://dbpedia.org/resource/Jamestown,_New_York
+frank sinatra and was bornbirthPlace	http://dbpedia.org/resource/Hoboken,_New_Jersey
+pintado and was bornbirthPlace	http://dbpedia.org/resource/Madrid
+sander puri and was bornbirthPlace	http://dbpedia.org/resource/Tartu
+carlos bueno and was bornbirthPlace	http://dbpedia.org/resource/Mexico
+flavio maestri and was bornbirthPlace	http://dbpedia.org/resource/Lima
+jack kerouac and was bornbirthPlace	http://dbpedia.org/resource/Lowell,_Massachusetts
+bill maher and was bornbirthPlace	http://dbpedia.org/resource/New_Jersey
+mateiu caragiale and was bornbirthPlace	http://dbpedia.org/resource/Drobeta-Turnu_Severin
+john henry mackay and was bornbirthPlace	http://dbpedia.org/resource/Scotland
+daniel mcbreen and was bornbirthPlace	http://dbpedia.org/resource/England
+jorge teixeira and was bornbirthPlace	http://dbpedia.org/resource/Portugal
+nwankwo kanu and was bornbirthPlace	http://dbpedia.org/resource/Owerri
+willem oltmans and was bornbirthPlace	http://dbpedia.org/resource/Huizen
+kathy acker and was bornbirthPlace	http://dbpedia.org/ontology/City
+percy olivares and was bornbirthPlace	http://dbpedia.org/resource/Lima
+derek boateng and was bornbirthPlace	http://dbpedia.org/resource/Accra
+charlie chaplin and was bornbirthPlace	http://dbpedia.org/resource/London
+graeme souness and was bornbirthPlace	http://dbpedia.org/resource/Scotland
+boris pasternak and was bornbirthPlace	http://dbpedia.org/resource/Moscow
+michel foucault and was bornbirthPlace	http://dbpedia.org/resource/Poitiers
+hassan yebda and was bornbirthPlace	http://dbpedia.org/resource/Saint-Maurice,_Val-de-Marne
+souleymane youla and was bornbirthPlace	http://dbpedia.org/resource/Belgium
+duke ellington and was bornbirthPlace	http://dbpedia.org/resource/Washington,_D.C.
+gennaro gattuso and was bornbirthPlace	http://dbpedia.org/resource/Corigliano_Calabro
+deon burton and was bornbirthPlace	http://dbpedia.org/resource/Reading,_Berkshire
+jeffrey dahmer and was bornbirthPlace	http://dbpedia.org/resource/Bath_Township,_Summit_County,_Ohio
+joanna of castile and was bornbirthPlace	http://dbpedia.org/resource/Toledo,_Spain
+jimmy bone and was bornbirthPlace	http://dbpedia.org/resource/Scotland
+pepe mel and was bornbirthPlace	http://dbpedia.org/resource/Madrid
+franz beckenbauer and was bornbirthPlace	http://dbpedia.org/resource/Munich
+gerald ford and was bornbirthPlace	http://dbpedia.org/resource/Omaha,_Nebraska
+woody guthrie and was bornbirthPlace	http://dbpedia.org/resource/Okemah,_Oklahoma
+gus poyet and was bornbirthPlace	http://dbpedia.org/resource/Spain
+tiffeny milbrett and was bornbirthPlace	http://dbpedia.org/resource/Portland,_Oregon
+noor inayat khan and was bornbirthPlace	http://dbpedia.org/resource/Moscow
+alvin lee and was bornbirthPlace	http://dbpedia.org/resource/Nottingham
+lord byron and was bornbirthPlace	http://dbpedia.org/resource/London
+andrew cunningham, 1st viscount cunningham of hyndhope and was bornbirthPlace	http://dbpedia.org/resource/County_Dublin
+patrick m'boma and was bornbirthPlace	http://dbpedia.org/resource/Douala
+michael hector and was bornbirthPlace	http://dbpedia.org/resource/London
+carl sagan and was bornbirthPlace	http://dbpedia.org/resource/Brooklyn
+tomer chencinski and was bornbirthPlace	http://dbpedia.org/resource/Bat_Yam
+roy hodgson and was bornbirthPlace	http://dbpedia.org/resource/Croydon
+james brown and was bornbirthPlace	http://dbpedia.org/resource/Barnwell,_South_Carolina
+anwar al-awlaki and was bornbirthPlace	http://dbpedia.org/resource/Yemen
+bruce grobbelaar and was bornbirthPlace	http://dbpedia.org/ontology/Continent
+lenny bruce and was bornbirthPlace	http://dbpedia.org/resource/Mineola,_New_York
+chris iwelumo and was bornbirthPlace	http://dbpedia.org/resource/Coatbridge
+robert de pinho de souza and was bornbirthPlace	http://dbpedia.org/resource/Brazil
+hugh trenchard, 1st viscount trenchard and was bornbirthPlace	http://dbpedia.org/resource/Taunton
+robert f. kennedy and was bornbirthPlace	http://dbpedia.org/ontology/City
+ricardo lunari and was bornbirthPlace	http://dbpedia.org/resource/Santa_Fe_Province
+mo johnston and was bornbirthPlace	http://dbpedia.org/resource/Glasgow
+jane addams and was bornbirthPlace	http://dbpedia.org/resource/Cedarville,_Illinois
+murray jones and was bornbirthPlace	http://dbpedia.org/resource/United_States
+anders limpar and was bornbirthPlace	http://dbpedia.org/resource/Solna_Municipality
+paulo wanchope and was bornbirthPlace	http://dbpedia.org/resource/Heredia,_Costa_Rica
+dmitri shostakovich and was bornbirthPlace	http://dbpedia.org/ontology/Country
+sun ra and was bornbirthPlace	http://dbpedia.org/resource/Birmingham,_Alabama
+javier clemente and was bornbirthPlace	http://dbpedia.org/resource/Barakaldo
+jim mckay and was bornbirthPlace	http://dbpedia.org/resource/Philadelphia
+walter scott and was bornbirthPlace	http://dbpedia.org/resource/Edinburgh
+selim benachour and was bornbirthPlace	http://dbpedia.org/resource/Paris
+ezra pound and was bornbirthPlace	http://dbpedia.org/resource/Hailey,_Idaho
+john buchan and was bornbirthPlace	http://dbpedia.org/resource/United_Kingdom
+nat adderley and was bornbirthPlace	http://dbpedia.org/resource/Tampa,_Florida
+linus pauling and was bornbirthPlace	http://dbpedia.org/resource/Portland,_Oregon
+pop smith and was bornbirthPlace	http://dbpedia.org/resource/Canada
+bill krieg and was bornbirthPlace	http://dbpedia.org/resource/Petersburg,_Illinois
+joseph campbell and was bornbirthPlace	http://dbpedia.org/resource/White_Plains,_New_York
+jefferson davis and was bornbirthPlace	http://dbpedia.org/resource/Mississippi
+airey neave and was bornbirthPlace	http://dbpedia.org/resource/Knightsbridge
+jacqueline kennedy onassis and was bornbirthPlace	http://dbpedia.org/resource/Southampton_(village),_New_York
+didier drogba and was bornbirthPlace	http://dbpedia.org/resource/Abidjan
+filipe da costa and was bornbirthPlace	http://dbpedia.org/resource/Portugal
+pope john paul ii and was bornbirthPlace	http://dbpedia.org/resource/Wadowice
+fred astaire and was bornbirthPlace	http://dbpedia.org/resource/Omaha,_Nebraska
+dick advocaat and was bornbirthPlace	http://dbpedia.org/resource/The_Hague
+tobias linderoth and was bornbirthPlace	http://dbpedia.org/resource/Marseille
+lucas barrios and was bornbirthPlace	http://dbpedia.org/resource/Paraguay
+jeff agoos and was bornbirthPlace	http://dbpedia.org/resource/United_States
+george s. patton and was bornbirthPlace	http://dbpedia.org/resource/United_States
+con lucid and was bornbirthPlace	http://dbpedia.org/resource/Hatfield,_Hertfordshire
+robbie keane and was bornbirthPlace	http://dbpedia.org/resource/Tallaght
+martin o'neill and was bornbirthPlace	http://dbpedia.org/resource/Kilrea
+wally schirra and was bornbirthPlace	http://dbpedia.org/resource/Hackensack,_New_Jersey
+dean holdsworth and was bornbirthPlace	http://dbpedia.org/resource/Walthamstow
+mario andretti and was bornbirthPlace	http://dbpedia.org/resource/Italy
+michael essien and was bornbirthPlace	http://dbpedia.org/resource/Accra
+lillian gish and was bornbirthPlace	http://dbpedia.org/resource/Springfield,_Ohio
+artur jorge and was bornbirthPlace	http://dbpedia.org/resource/Portugal
+crazy schmit and was bornbirthPlace	http://dbpedia.org/resource/Chicago
+benny feilhaber and was bornbirthPlace	http://dbpedia.org/resource/Rio_de_Janeiro
+thomas sowell and was bornbirthPlace	http://dbpedia.org/ontology/Country
+xavi and was bornbirthPlace	http://dbpedia.org/resource/Terrassa
+charles lindbergh and was bornbirthPlace	http://dbpedia.org/resource/New_York
+eric cantona and was bornbirthPlace	http://dbpedia.org/resource/Marseille
+dizzy gillespie and was bornbirthPlace	http://dbpedia.org/resource/Cheraw,_South_Carolina
+dan petrescu and was bornbirthPlace	http://dbpedia.org/resource/Romania
+damarcus beasley and was bornbirthPlace	http://dbpedia.org/resource/Fort_Wayne,_Indiana
+giovani dos santos and was bornbirthPlace	http://dbpedia.org/resource/Monterrey
+carlos fuentes and was bornbirthPlace	http://dbpedia.org/resource/Panama_City
+freddy adu and was bornbirthPlace	http://dbpedia.org/resource/Tema
+terry venables and was bornbirthPlace	http://dbpedia.org/resource/Dagenham
+ronald koeman and was bornbirthPlace	http://dbpedia.org/resource/Zaandam
+carol shields and was bornbirthPlace	http://dbpedia.org/resource/Canada
+brian mcbride and was bornbirthPlace	http://dbpedia.org/resource/Glasgow
+richard feynman and was bornbirthPlace	http://dbpedia.org/resource/Queens
+ruud gullit and was bornbirthPlace	http://dbpedia.org/resource/Amsterdam
+alou diarra and was bornbirthPlace	http://dbpedia.org/resource/Villepinte,_Seine-Saint-Denis
+ursula k. le guin and was bornbirthPlace	http://dbpedia.org/resource/Villepinte,_Seine-Saint-Denis
+bruno metsu and was bornbirthPlace	http://dbpedia.org/resource/France
+eric wynalda and was bornbirthPlace	http://dbpedia.org/resource/San_Francisco_Bay_Area
+hugh duffy and was bornbirthPlace	http://dbpedia.org/resource/Pennsylvania
+park chu-young and was bornbirthPlace	http://dbpedia.org/resource/South_Korea
+reto ziegler and was bornbirthPlace	http://dbpedia.org/resource/Geneva
+sixto peralta and was bornbirthPlace	http://dbpedia.org/resource/Argentina
+rafik djebbour and was bornbirthPlace	http://dbpedia.org/resource/Grenoble
+shunsuke nakamura and was bornbirthPlace	http://dbpedia.org/resource/Kanagawa_Prefecture
+steve marriott and was bornbirthPlace	http://dbpedia.org/resource/Manor_Park,_London
+elvis presley and was bornbirthPlace	http://dbpedia.org/resource/Tupelo,_Mississippi
+alejandro bedoya and was bornbirthPlace	http://dbpedia.org/resource/New_Jersey
+mircea lucescu and was bornbirthPlace	http://dbpedia.org/resource/Arad_County
+robbie rogers and was bornbirthPlace	http://dbpedia.org/resource/Hampton,_Virginia
+charles gbeke and was bornbirthPlace	http://dbpedia.org/resource/Rennes
+douglas haig, 1st earl haig and was bornbirthPlace	http://dbpedia.org/resource/United_Kingdom
+norman mailer and was bornbirthPlace	http://dbpedia.org/resource/Long_Branch,_New_Jersey
+javier saviola and was bornbirthPlace	http://dbpedia.org/resource/Buenos_Aires
+niels bohr and was bornbirthPlace	http://dbpedia.org/resource/Copenhagen
+daniel fernandes and was bornbirthPlace	http://dbpedia.org/resource/Edmonton
+jimi hendrix and was bornbirthPlace	http://dbpedia.org/resource/Seattle
+javad nekounam and was bornbirthPlace	http://dbpedia.org/resource/Tehran
+john burridge and was bornbirthPlace	http://dbpedia.org/resource/England
+marvin gaye and was bornbirthPlace	http://dbpedia.org/resource/Washington,_D.C.
+john toshack and was bornbirthPlace	http://dbpedia.org/resource/Cardiff
+martin luther and was bornbirthPlace	http://dbpedia.org/resource/Eisleben
+john jacob astor, 1st baron astor of hever and was bornbirthPlace	http://dbpedia.org/resource/Manhattan
+william s. burroughs and was bornbirthPlace	http://dbpedia.org/resource/Missouri
+dirceu and was bornbirthPlace	http://dbpedia.org/resource/South_Region,_Brazil
+levir culpi and was bornbirthPlace	http://dbpedia.org/resource/Curitiba
+jozy altidore and was bornbirthPlace	http://dbpedia.org/resource/Livingston,_New_Jersey
+frank soo and was bornbirthPlace	http://dbpedia.org/resource/Manchester
+lukas podolski and was bornbirthPlace	http://dbpedia.org/resource/Gliwice
+fabio cannavaro and was bornbirthPlace	http://dbpedia.org/resource/Naples
+kurt vonnegut and was bornbirthPlace	http://dbpedia.org/resource/Indianapolis
+laurence olivier and was bornbirthPlace	http://dbpedia.org/resource/Dorking
+clive barker and was bornbirthPlace	http://dbpedia.org/resource/Liverpool
+john j. crittenden and was bornbirthPlace	http://dbpedia.org/ontology/City
+ray charles and was bornbirthPlace	http://dbpedia.org/resource/Albany,_Georgia
+ernest hemingway and was bornbirthPlace	http://dbpedia.org/resource/Oak_Park,_Illinois
+alexandros tziolis and was bornbirthPlace	http://dbpedia.org/resource/Katerini
+thiago silva and was bornbirthPlace	http://dbpedia.org/resource/Rio_de_Janeiro
+john henry newman and was bornbirthPlace	http://dbpedia.org/resource/London
+henry h. arnold and was bornbirthPlace	http://dbpedia.org/resource/United_States
+alec douglas-home and was bornbirthPlace	http://dbpedia.org/resource/London
+ellis remy and was bornbirthPlace	http://dbpedia.org/resource/United_Kingdom
+john denver and was bornbirthPlace	http://dbpedia.org/resource/Roswell,_New_Mexico
+bukola oriola and was bornbirthPlace	http://dbpedia.org/resource/Nigeria
+oguchi onyewu and was bornbirthPlace	http://dbpedia.org/resource/Washington,_D.C.
+christian vieri and was bornbirthPlace	http://dbpedia.org/resource/Bologna
+bryan aldave and was bornbirthPlace	http://dbpedia.org/resource/Mercedes,_Uruguay
+john kerr, jr. (soccer) and was bornbirthPlace	None
+mark cooper (footballer, born 1968) and was bornbirthPlace	None
+theo van gogh (film director) and was bornbirthPlace	None
+samuel r. delany and was bornbirthPlace	None
+george q. cannon and was bornbirthPlace	None
+paul mcgee (footballer, born 1954) and was bornbirthPlace	None
+w. b. yeats and was bornbirthPlace	None
+g. k. chesterton and was bornbirthPlace	None
+john taylor (mormon) and was bornbirthPlace	None
+h. h. asquith and was bornbirthPlace	None
+w. h. auden and was bornbirthPlace	None
+c. s. lewis and was bornbirthPlace	None
+paul wright (soccer) and was bornbirthPlace	None
+stuart elliott (footballer, born 1977) and was bornbirthPlace	None
+franklin d. roosevelt and was bornbirthPlace	None
+tom fleming (baseball) and was bornbirthPlace	None
+t. s. eliot and was bornbirthPlace	None
+ed glenn (shortstop) and was bornbirthPlace	None
+mark watson (canadian soccer) and was bornbirthPlace	None
+edwin morgan (poet) and was bornbirthPlace	None
+gary mills (footballer, born 1961) and was bornbirthPlace	None
+carlos ruiz (guatemalan footballer) and was bornbirthPlace	None
+john o'connell (second baseman) and was bornbirthPlace	None
