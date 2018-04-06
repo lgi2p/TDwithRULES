@@ -32,6 +32,8 @@ For repeat the experiments you have to follow the following steps:
   \> python Exps_RULEs_REAL_data.py 
  - outputs:
    - all results will be directly displayed
+   - files containing for each data item the returned true values are saved in "exp_real_world" folder
+   - a copy of the results we obtained on these dataset is in "real_world_dataset/out_Data_A" and "real_world_dataset/out_Data_B" 
  - note that the source code of the extraction protocols that were used to create these datasets is provided  in "extraction_protocols" folder
   
 ## RUN the experiments on Synthetic Data
