@@ -18,7 +18,7 @@ import copy
 
 
 def save_results_sums(dict_solution, ground):
-	f_out = open("out_Sums2.txt", "w", encoding="utf-8")
+	f_out = open("out_Sums.txt", "w", encoding="utf-8")
 	for d in dict_solution:
 		if d not in ground:
 			continue
@@ -35,10 +35,10 @@ def save_results_sums(dict_solution, ground):
 	return 1
 
 
-def save_results(dict_solution, threshold_list, gamma_, ground):
+def save_results(dict_solution, threshold_list, gamma_, ground, data_):
 	for thr in threshold_list:
 		# print(set(dict_solution))
-		f_out = open("out_TSbC_" + str(gamma_) + "_" + str(thr) + ".txt", "w", encoding="utf-8")
+		f_out = open("out_TSbC_" + str(data_) + "_"+ str(gamma_) + "_" + str(thr) + ".txt", "w", encoding="utf-8")
 		for d in dict_solution[thr]:
 			if d not in ground:
 				continue
@@ -151,7 +151,7 @@ if __name__ == '__main__':
 			eligible_rules[d] = list_of_rules  # de indenta
 	f_in_eligible.close()
 	#load all the valid values that are supported by each rule for each data item
-	valid_values_for_r_and_d = utils_rules.read_valid_values_dict_real_world("valid_values_for_el_rules_hc_" + str(str_hc) + "_real_world.csv")
+	valid_values_for_r_and_d = utils_rules.read_valid_values_dict_real_world(dir_base + "real_world_dataset/valid_values_for_el_rules_hc_" + str(str_hc) + "_real_world.csv")
 
 
 	facts_file_list = [dir_base + "real_world_dataset//dataA.txt", dir_base + "real_world_dataset//dataB.txt"]
@@ -248,7 +248,11 @@ if __name__ == '__main__':
 								solutions_dict = selection_algorithm.compute_solution_best_children_final_real_world(D,predicate_info,C_adapt_rules,conf_adapt_norm,T_average_normalized,"",k_expected,first_ranking_criteria,second_ranking_criteria,threshold_list)
 
 								dict_solution_IC_final = solutions_dict[0]
-								save_results(dict_solution_IC_final, threshold_list, gamma_, ground)
+								if "A" in facts_file:
+									data_str = "DataA"
+								else:
+									data_str = "DataB"
+								save_results(dict_solution_IC_final, threshold_list, gamma_, ground, data_str)
 
 								print("MODEL -- BestChildren -- ")
 								for threshold in threshold_list:
