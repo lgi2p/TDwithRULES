@@ -8,7 +8,7 @@ Co-authors:
  - Sebastien Harispe
  - Isabelle Mougenot
 
-TD with RULES permits to run experiments on an adaptation of a truth discovery model that takes into account the dependencies may exist among data items to enhance the results. As proof of concept, Sums and Adapted Sums model have been modified.
+TD with RULES permits to run experiments on an adaptation of a truth discovery model that takes into account the dependencies may exist among data items to enhance the results. As proof of concept, Sums model has been modified.
 This kind of dependencies are detected identifying the frequent patterns from an external knowledge base (in our experiments DBPEDIA).
 We use AMIE+ (https://www.mpi-inf.mpg.de/departments/databases-and-information-systems/research/yago-naga/amie/) to extract rules (that represent the frequent patterns) from DBpedia.
 
