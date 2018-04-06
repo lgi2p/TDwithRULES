@@ -200,6 +200,8 @@ def load_graph(graph_file, graph_file_reduced, apply_transitive_reduction):
 
 	else:
 		g = loadGraphOfURIs_from_file(graph_file_reduced, False)
+
+
 	return g
 
 
@@ -504,7 +506,7 @@ def create_value_info_computation(g, sources_dataItemValues, dataitem_index_file
 					n_source_trustwordiness_to_remove += v + "=" + str(source_trustwordiness_to_remove[n][v])
 
 				print("Things to remove to compute ", n)
-				stop = True
+				#stop = True
 
 			source_string_propagated = ""
 			for ns in new_sources[n]:
@@ -529,6 +531,8 @@ def create_value_info_computation(g, sources_dataItemValues, dataitem_index_file
 def get_father_dict(children):
 	father_dict = dict()
 	for v in children:
+		if v not in father_dict:
+			father_dict[v] = set()
 		for child in children[v]:
 			if child not in father_dict:
 				father_dict[child] = set()
@@ -568,20 +572,12 @@ if __name__ == '__main__':
 	ancestors['B'] = {'A', 'B'}
 	ancestors['C'] = {'A', 'B', 'C'}
 	ancestors['D'] = {'A', 'B', 'C', 'D'}
-	ancestors['E'] = {'A', 'B', 'C', 'E'}
-	ancestors['F'] = {'A', 'B', 'F'}
+	ancestors['E'] = {'A', 'B', 'C', 'E', 'F'}
+	ancestors['F'] = {'A', 'B', 'F', 'G'}
 	ancestors['G'] = {'A', 'B', 'G'}
 	ancestors['H'] = {'A', 'H'}
 	ancestors['I'] = {'A', 'H', 'I'}
 	ancestors['L'] = {'A', 'H', 'I', 'L'}
-
-	ancestors = dict()
-	ancestors['root'] = {'root'}
-	ancestors['a'] = {'root', 'a'}
-	ancestors['b'] = {'root', 'b'}
-	ancestors['c'] = {'root', 'c', 'a'}
-	ancestors['d'] = {'root', 'd', 'a', 'e', 'b'}
-	ancestors['e'] = {'root', 'e', 'b'}
 
 	g = loadGraphOfURIs(ancestors)
 	g_Red = perform_transitive_reduction(g)
@@ -594,7 +590,7 @@ if __name__ == '__main__':
 				if m not in children:
 					children[m] = set()
 				children[m].add(n)
-	node_depths = get_depth(children, 'root')
+	node_depths = get_depth(children, 'A')
 	print("Depth of DAG " + str(max(node_depths.values())))
 	exit()
 	nb_descendants_d = {}

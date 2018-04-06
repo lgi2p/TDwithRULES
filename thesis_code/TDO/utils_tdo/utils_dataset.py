@@ -218,7 +218,7 @@ def load_all_dataitem_values_confidence_infos_low_memory(dataitem_ids, dir_path,
 				app_conf_dict[data_item].add(data[0])
 
 				for s in data[4].split(';'):
-					s = int(s)
+					#s = int(s)
 					if s not in app_source_dict:
 						app_source_dict[s] = set()
 					app_source_dict[s].add(data_item)
@@ -229,8 +229,7 @@ def load_all_dataitem_values_confidence_infos_low_memory(dataitem_ids, dir_path,
 	print ("number of values confidence infos for which no source provided this facts: " + str(cont_no_facts))
 	return [None, None, S_prop, app_conf_dict, app_source_dict]
 
-def load_all_dataitem_values_confidence_infos_low_memory_small(sources_dataItemValues):
-	'''read the file where the information required for computing the effects of belief propagation'''
+'''def load_all_dataitem_values_confidence_infos_low_memory_small(sources_dataItemValues):#read the file where the information required for computing the effects of belief propagation
 
 	for data_item in dataitem_ids:
 		cont = cont + 1
@@ -267,7 +266,7 @@ def load_all_dataitem_values_confidence_infos_low_memory_small(sources_dataItemV
 
 	print ("number of values confidence infos loaded: " + str(len(S_prop)))
 	print ("number of values confidence infos for which no source provided this facts: " + str(cont_no_facts))
-	return [None, None, S_prop, app_conf_dict, app_source_dict]
+	return [None, None, S_prop, app_conf_dict, app_source_dict]'''
 
 def loading_values_sim_ids(path_ids_file_):
 	try:
@@ -559,3 +558,329 @@ def read_estimation_file_conf_norm(conf_file_adapt_and_norm):
 		C_adapt_norm[line[0]] = float(line[1])
 	f.close()
 	return C_adapt_norm
+
+def load_facts_real_world_all_values(facts_file, header):
+	'''upload a dictionary of this form
+		<key = dataitem , value = <key = value_for_d, value = sources> >
+		using the fact_XXX file - our dataset
+		'''
+	sources_dataItemValues = {}
+	fact_cont = 0
+	#f_out_ = open('D:\\c1_no_hub_sources_no_imdb.txt', 'w', encoding='utf-8')
+	with open(facts_file, "r", encoding="utf-8") as reader:
+
+		for line in reader:
+			fact_cont = fact_cont + 1
+			line = line.strip().split('\t')
+			if (len(line) != 3):
+				print(fact_cont)
+				print("[Warning] skipping " + str(line))
+				continue
+
+			d = line[0]
+			v = line[2]
+			source = line[1]
+
+			index_pref = source.index("://") + 3
+			if "/" in source[index_pref:]:
+				domain_url = source[:source[index_pref:].index("/") + index_pref]
+				source = domain_url
+
+			if not (d in sources_dataItemValues): sources_dataItemValues[d] = {}
+			if not (v in sources_dataItemValues[d]): sources_dataItemValues[d][v] = set()
+			sources_dataItemValues[d][v].add(source)
+
+	return sources_dataItemValues
+
+def load_facts_real_world(facts_file, header, ancestors):
+	'''upload a dictionary of this form
+		<key = dataitem , value = <key = value_for_d, value = sources> >
+		using the fact_XXX file - our dataset
+		'''
+	sources_dataItemValues = {}
+	fact_cont = 0
+	with open(facts_file, "r", encoding="utf-8") as reader:
+
+		for line in reader:
+			fact_cont = fact_cont + 1
+			line = line.strip().split('\t')
+			if (len(line) != 3):
+				print(fact_cont)
+				print("[Warning] skipping " + str(line))
+				continue
+
+			d = line[0]
+			v = line[2]
+			if v not in ancestors:
+				continue
+			source = line[1]
+
+			index_pref = source.index("://") + 3
+			if "/" in source[index_pref:]:
+				domain_url = source[:source[index_pref:].index("/") + index_pref]
+				source = domain_url
+
+			if not (d in sources_dataItemValues): sources_dataItemValues[d] = {}
+			if not (v in sources_dataItemValues[d]): sources_dataItemValues[d][v] = set()
+			sources_dataItemValues[d][v].add(source)
+
+
+	return sources_dataItemValues
+
+def load_facts_real_world_seb_modification(facts_file, header, ancestors, father_dict, ic_values):
+	'''upload a dictionary of this form
+		<key = dataitem , value = <key = value_for_d, value = sources> >
+		using the fact_XXX file - our dataset
+		'''
+	sources_dataItemValues = load_facts_real_world(facts_file, header, ancestors)
+
+	for d in sources_dataItemValues:
+		count_dict = dict()
+		for v in sources_dataItemValues[d]:#For each data item, I count I many sources provided each provided value.
+			for s in sources_dataItemValues[d][v]:
+				if v not in count_dict:
+					count_dict[v] = 0
+				count_dict[v] += 1#2
+			for a in ancestors[v]:
+				if a == v:
+					continue
+				for s in sources_dataItemValues[d][v]:
+					if a not in count_dict:
+						count_dict[a] = 0
+					count_dict[a] += 1
+		'''		for v in sources_dataItemValues[d]:#For each data item, I count I many sources provided each provided value.
+			
+			for a in ancestors[v]:
+				for s in sources_dataItemValues[d][v]:
+					if a not in count_dict:
+						count_dict[a] = 0
+					count_dict[a] += 1'''
+		domain_d = set(sources_dataItemValues[d])
+		for v in domain_d:
+
+			#Then when a value is provided by a single source, I replace it by its nearest ancestors that are provived by more than two sources.
+			#if count_dict[v] == 1:
+			if len(sources_dataItemValues[d][v]) == 1:
+				#retrieving the value by which replacing the selected v
+				replace_with_set = set()
+				queue = set()
+				queue.add(v)
+				#I go up in the partial order selecting, each time, the father of the selcted node
+				while len(queue) > 0:
+					node = queue.pop()
+					if node == "http://www.w3.org/2002/07/owl#Thing":
+						continue
+					for father in father_dict[node]:
+						if count_dict[father] > 2:#3
+							replace_with_set.add(father)
+						else:
+							queue.add(father)
+				#the following loop allow to avoid indesiderable situation that may generated by nodes having multiple fathers
+				#I keep only the most specific values in the set of replacing values.
+				remove_v = set()
+				for repl_v in replace_with_set:
+					for repl_v_2 in replace_with_set:
+						if repl_v == repl_v_2:
+							continue
+						if repl_v_2 in ancestors[repl_v]:
+							remove_v.add(repl_v_2)
+				for repl_v in remove_v:
+					replace_with_set.remove(repl_v)
+
+				source = sources_dataItemValues[d][v].pop()
+				'''if len(replace_with_set) > 1:
+					max_ = 0
+					repl_v_max = ""
+					for repl_v in replace_with_set:
+						if count_dict[repl_v]> max_:
+							max_ = count_dict[repl_v]
+							repl_v_max = repl_v
+						#elif count_dict[repl_v] == max_:
+						#	if repl_v == "http://dbpedia.org/resource/Europe":
+						#		repl_v_max = repl_v
+					replace_with_set = set()
+					replace_with_set.add(repl_v_max)'''
+
+				for repl_v in replace_with_set:
+					if repl_v not in sources_dataItemValues[d]:
+						sources_dataItemValues[d][repl_v] =set()
+					sources_dataItemValues[d][repl_v].add(source)
+				if d == "Philippe Troussier AND was born":
+					print("!!!!!!!!!! " + str(v) +" is replaced with " + str(replace_with_set))
+
+		remove_v = set()
+		for v in sources_dataItemValues[d]:
+			if len(sources_dataItemValues[d][v]) == 0:
+				remove_v.add(v)
+		for v in remove_v:
+			del sources_dataItemValues[d][v]
+
+
+
+	'''claim_to_replace = dict()
+	for d in sources_dataItemValues:
+		claim_to_replace[d] = dict()
+		domain_set = set()
+		for v in sources_dataItemValues[d]:
+			if len(sources_dataItemValues[d][v])>1:
+				domain_set.add(v)
+				for a in ancestors[v]:
+					domain_set.add(a)
+		if len(domain_set) == 0:
+			domain_set = ancestors[list(sources_dataItemValues[d])[0]]
+			for v in sources_dataItemValues[d]:
+				domain_set = domain_set.intersection(ancestors[v])
+		domain_d = set(sources_dataItemValues[d])
+		for v in domain_d:
+			source_set = copy.deepcopy(sources_dataItemValues[d][v])
+			if len(sources_dataItemValues[d][v]) == 1:
+				app_set = domain_set.intersection(ancestors[v])
+				if len(app_set) == 0:
+					print()
+				app_dict = dict()
+				for element in app_set:
+					app_dict[element] = ic_values[element]
+
+				ic_max = max(app_dict.values())
+				list_sorted = sorted(app_dict, key=app_dict.get, reverse=True)
+
+				replace_with = set()
+				for el in list_sorted:
+					if app_dict[el] == ic_max:
+						replace_with.add(el)
+
+				for s in source_set:
+					for replace_with_v in replace_with:
+						if replace_with_v not in sources_dataItemValues[d]:
+							sources_dataItemValues[d][replace_with_v] = set()
+						sources_dataItemValues[d][replace_with_v].add(s)
+					sources_dataItemValues[d][v].remove(s)
+
+		remove_v = set()
+		for v in sources_dataItemValues[d]:
+			if len(sources_dataItemValues[d][v]) == 0:
+				remove_v.add(v)
+		for v in remove_v:
+			del sources_dataItemValues[d][v]'''
+
+	remove_d = set()
+	for d in sources_dataItemValues:
+		if len(sources_dataItemValues[d]) == 0:
+			remove_d.add(d)
+	for d in remove_d:
+		del sources_dataItemValues[d]
+
+
+	return sources_dataItemValues
+
+
+def load_facts_real_world_high_coverage(facts_file, header, ancestors):
+	sources_dataItemValues = load_facts_real_world(facts_file, header, ancestors)
+
+	F_s, S = load_fact_and_source_info(sources_dataItemValues)
+
+	sources_dataItemValues_high_coverage = dict()
+	for d in sources_dataItemValues:
+		sources_dataItemValues_high_coverage[d] = dict()
+		for v in sources_dataItemValues[d]:
+			sources_dataItemValues_high_coverage[d][v] = set()
+			for s in sources_dataItemValues[d][v]:
+				if len(F_s[s]) > 1:
+					sources_dataItemValues_high_coverage[d][v].add(s)
+
+		remove_v = set()
+		for v in sources_dataItemValues_high_coverage[d]:
+			if len(sources_dataItemValues_high_coverage[d][v])==0:
+				remove_v.add(v)
+		for v in remove_v:
+			del sources_dataItemValues_high_coverage[d][v]
+
+	remove_v = set()
+	for d in sources_dataItemValues_high_coverage:
+		if len(sources_dataItemValues_high_coverage[d]) == 0:
+			remove_v.add(d)
+	for d in remove_v:
+		del sources_dataItemValues_high_coverage[d]
+
+	print()
+	print("dimension initial files data items " + str(len(sources_dataItemValues)))
+	print("dimension initial files claims " + str(len(sources_dataItemValues.values())))
+
+	av_ = 0
+	cont_claims = 0
+	for d in sources_dataItemValues:
+		for v in sources_dataItemValues[d]:
+			av_ += len(sources_dataItemValues[d][v])
+			cont_claims += 1
+
+	print("Average number of sources per claim " + str(av_ / cont_claims))
+	print("Number of claims " + str(cont_claims))
+
+	print()
+	print("dimension actual files data items " + str(len(sources_dataItemValues_high_coverage)))
+	print("dimension actual files claims " + str(len(sources_dataItemValues_high_coverage.values())))
+
+
+	av_ = 0
+	cont_claims = 0
+	for d in sources_dataItemValues_high_coverage:
+		for v in sources_dataItemValues_high_coverage[d]:
+			av_+= len(sources_dataItemValues_high_coverage[d][v])
+			cont_claims += 1
+
+	print("Average number of sources per claim " +str(av_/cont_claims))
+	print("Number of claims " + str(cont_claims))
+	return sources_dataItemValues_high_coverage
+
+
+def load_facts_real_world_high_coverage_v2(facts_file, header, ancestors):
+	sources_dataItemValues = load_facts_real_world_high_coverage(facts_file, header, ancestors)
+
+	F_s, S = load_fact_and_source_info(sources_dataItemValues)
+
+	sources_dataItemValues_high_coverage_v2 = dict()
+	for d in sources_dataItemValues:
+
+		for v in sources_dataItemValues[d]:
+			if len(sources_dataItemValues[d][v]) > 1:
+				if d not in sources_dataItemValues_high_coverage_v2: sources_dataItemValues_high_coverage_v2[d] = dict()
+				if v not in sources_dataItemValues_high_coverage_v2[d]: sources_dataItemValues_high_coverage_v2[d][v] = set()
+				sources_dataItemValues_high_coverage_v2[d][v].update(sources_dataItemValues[d][v])
+
+	print()
+	print("dimension actual files data items " + str(len(sources_dataItemValues_high_coverage_v2)))
+	print("dimension actual files claims " + str(len(sources_dataItemValues_high_coverage_v2.values())))
+
+
+	av_ = 0
+	cont_claims = 0
+	for d in sources_dataItemValues_high_coverage_v2:
+		for v in sources_dataItemValues_high_coverage_v2[d]:
+			av_+= len(sources_dataItemValues_high_coverage_v2[d][v])
+			cont_claims += 1
+
+	print("Average number of sources per claim " +str(av_/cont_claims))
+	print("Number of claims " + str(cont_claims))
+	return sources_dataItemValues_high_coverage_v2
+
+
+def load_facts_real_world_less_20_sources(facts_file, header, ancestors):
+	sources_dataItemValues = load_facts_real_world(facts_file, header, ancestors)
+
+	sources_dataItemValues_high_coverage_v2 = dict()
+	for d in sources_dataItemValues:
+		cont_tot = 0
+		for v in sources_dataItemValues[d]:
+			cont_tot += len(sources_dataItemValues[d][v])
+
+		if cont_tot < 20:
+			for v in sources_dataItemValues[d]:
+				if d not in sources_dataItemValues_high_coverage_v2: sources_dataItemValues_high_coverage_v2[d] = dict()
+				if v not in sources_dataItemValues_high_coverage_v2[d]: sources_dataItemValues_high_coverage_v2[d][v] = set()
+				sources_dataItemValues_high_coverage_v2[d][v].update(sources_dataItemValues[d][v])
+
+	print()
+	print("dimension actual files data items " + str(len(sources_dataItemValues_high_coverage_v2)))
+	print("dimension actual files claims " + str(len(sources_dataItemValues_high_coverage_v2.values())))
+
+	return sources_dataItemValues_high_coverage_v2
