@@ -37,7 +37,7 @@ For repeat the experiments you have to follow the following steps:
 ## RUN the experiments on Synthetic Data
  - open the terminal and move in the "experiments" folder contained in the main project folder
  - write the following command line:  
-     \> python experiments\_eswc.py *predicate Sums&Rules\_flag AdaptedSums&Rules\_flag gamma\_list absolute\_path\_of\_required\_files\_dir absolute\_path\_of\_results\_dir max\_iteration\_number*  
+     \> python experiments\_iswc.py *predicate Sums&Rules\_flag AdaptedSums&Rules\_flag gamma\_list absolute\_path\_of\_required\_files\_dir absolute\_path\_of\_results\_dir max\_iteration\_number*  
 	where *predicate* specifies the predicate to test, *Sums&Rules\_flag* == True and *AdaptedSums&Rules\_flag* == True specify that both model will be tested.  
     Example:  
     \> python experiments\_iswc.py genre True False [0.0,0.1,0.9] D:/thesis\_code/TDO/ D:/results\_rules\_8\_jan/ 20   
