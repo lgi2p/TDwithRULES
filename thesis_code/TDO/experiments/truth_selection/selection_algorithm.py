@@ -3,13 +3,11 @@ import copy
 import os
 cwd = os.getcwd()
 if ("TDO") in cwd:
-	from TDO.experiments.evaluation import performance_measures
 	from TDO.experiments.truth_selection import adapted_model_selection
 	from TDO.utils_tdo import utils_taxonomy
 	from TDO.utils_tdo import utils_writing_results
 else:
 	sys.path.append('D:/Dropbox/thesis_code/TDO')
-	from experiments.evaluation import performance_measures
 	from experiments.truth_selection import adapted_model_selection
 	from utils_tdo import utils_taxonomy
 	from utils_tdo import utils_writing_results

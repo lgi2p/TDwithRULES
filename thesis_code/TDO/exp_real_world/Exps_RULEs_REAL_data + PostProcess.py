@@ -20,7 +20,7 @@ def save_results(dict_solution, threshold_list, gamma_, ground):
 
 	for thr in threshold_list:
 		#print(set(dict_solution))
-		f_out = open("D://out_TSbC_" + str(gamma_) + "_" + str(thr) + "_preprocessing_aft.txt" , "w", encoding="utf-8")
+		f_out = open("out_TSbC_" + str(gamma_) + "_" + str(thr) + "_preprocessing_aft.txt" , "w", encoding="utf-8")
 		for d in dict_solution[thr]:
 			if d not in ground:
 				continue
@@ -114,7 +114,7 @@ if __name__ == '__main__':
 	cont_d = 0
 	cont_zero_eligible_rules = 0
 
-	f_in_eligible = open("eligible_rules_hc_" + str(str_hc) + "_real_world.csv", "r")
+	f_in_eligible = open(dir_base + "real_world_dataset/eligible_rules_hc_" + str(str_hc) + "_real_world.csv", "r")
 	eligible_rules = dict()
 	#app_set = set()
 	for line in f_in_eligible:
@@ -136,7 +136,7 @@ if __name__ == '__main__':
 	f_in_eligible.close()
 	#print("control !! " + str(len(app_set)))
 
-	valid_values_for_r_and_d = utils_rules.read_valid_values_dict_real_world("valid_values_for_el_rules_hc_" + str(str_hc) + "_real_world.csv")
+	valid_values_for_r_and_d = utils_rules.read_valid_values_dict_real_world(dir_base + "real_world_dataset/valid_values_for_el_rules_hc_" + str(str_hc) + "_real_world.csv")
 
 	initial_trustworthiness = 0.8
 	initial_confidence = 1.0
@@ -151,25 +151,7 @@ if __name__ == '__main__':
 	sources_dataItemValues = dict()
 	dataitem_ids = dict()
 
-	facts_file = 'D:\\GoogleDrive\\famous_people_claims_v1.txt'#'D:\\Google Drive\\person_birthLocation_webpage_con_codifica_vale_2.txt'  # Output FILE where the extrated claims are saved
-	facts_file = "C:\\Users\\valen\\Dropbox\\thesis_code\\TDO\\real_world_dataset\\DataA.txt" #'D:\\GoogleDrive\\famous_people_claims_v3.txt'
-	#facts_file = "C:\\Users\\vberetta\\Google Drive\\famous_people_claims_v1.txt"
-	#facts_file = "D:\\c1_no_hub_sources_no_imdb.txt"
-
-	#facts_file = "D:\\v3_no_hub_sources.txt"
-	#facts_file = 'D:\\GoogleDrive\\famous_people_claims_CC_single_component.txt'
-	#facts_file = os.path.join(dir, facts_file)
-
-	confidence_value_computation_info_dir = "D:/real_world/confidence_value_computation_info_CC_aft1101/"
-	if not os.path.exists(confidence_value_computation_info_dir): os.makedirs(
-		confidence_value_computation_info_dir)
-	dataitem_index_file = "D:/real_world/dataitems_index_real_world_CC_aft1101.csv"
-
-
-	res_list = preprocessing_sums_model.preprocess_before_running_model_real_world("", facts_file,confidence_value_computation_info_dir,dataitem_index_file, g, ancestors)
-
-	ground_file = "D:/GoogleDrive/ground_real_world_v2.csv"
-	#ground_file = "C:\\Users\\vberetta\\Google Drive\\ground_real_world.csv"
+	ground_file = dir_base + "real_world_dataset/ground_real_world_v2.csv"
 	ground = dict()
 	f_in = open(ground_file, 'r', encoding='utf-8')
 	for line in f_in:
@@ -184,182 +166,196 @@ if __name__ == '__main__':
 	for d in remove_from_ground:
 		del ground[d]
 
+	facts_file_list = [dir_base + "real_world_dataset//dataA.txt", dir_base + "real_world_dataset//dataB.txt"]
 
-	if True:
+	for facts_file in facts_file_list:
+		print("Dataset " + str(facts_file.replace(dir_base + "real_world_dataset//", "")))
+
+		confidence_value_computation_info_dir = dir_base + "real_world_dataset/confidence_value_computation_info_CC_aft1101/"
+		if not os.path.exists(confidence_value_computation_info_dir): os.makedirs(
+			confidence_value_computation_info_dir)
+		dataitem_index_file = dir_base + "real_world_dataset/dataitems_index_real_world_CC_aft1101.csv"
+
+
+		res_list = preprocessing_sums_model.preprocess_before_running_model_real_world("", facts_file,confidence_value_computation_info_dir,dataitem_index_file, g, ancestors)
+
 		if True:
-			sources_dataItemValues = res_list[2]
-			print("Cardinality of data items: " + str(len(sources_dataItemValues)))
-			D = res_list[3]
-			F_s = res_list[4]
-			S = res_list[5]
-			#print("**" + str(len(S)))
-			S_prop = res_list[6]
-			app_conf_dict = res_list[7]
-			#create source dictionary
-			T = dict()
-			for d in sources_dataItemValues:
-				for v in sources_dataItemValues[d]:
-					for s in sources_dataItemValues[d][v]:
-						if s not in T:
-							T[s] = 0.5
-
-			# load facts
-			header = False
-			sources_dataItemValues = utils_dataset.load_facts_real_world(facts_file, header, ancestors)
-			D = list(sources_dataItemValues.keys())
-			# compute (1) all the facts that are claimed by a source and (2) all the sources that claim a specific fact
-			# (1) set of facts that are claimed by a specific source < key = source id, value = set of facts (dataitem + value) >
-			# (2) all the sources that claim a specific fact <key = dataitem + value, value = set of source ids>
-			print("Info about claims .... loading")
-			fact_and_source_info = utils_dataset.load_fact_and_source_info(sources_dataItemValues)
-			F_s = fact_and_source_info[0]
-			print("Number of sources (url domains) : " + str(len(F_s)))
-			S = fact_and_source_info[1]
-			print("number of claims : " + str(len(S)))
 			if True:
-				print("Compute boost dict propagated!")
+				sources_dataItemValues = res_list[2]
+				print("Cardinality of data items: " + str(len(sources_dataItemValues)))
+				D = res_list[3]
+				F_s = res_list[4]
+				S = res_list[5]
+				#print("**" + str(len(S)))
+				S_prop = res_list[6]
+				app_conf_dict = res_list[7]
+				#create source dictionary
+				T = dict()
+				for d in sources_dataItemValues:
+					for v in sources_dataItemValues[d]:
+						for s in sources_dataItemValues[d][v]:
+							if s not in T:
+								T[s] = 0.5
 
-				boost_dict_prop = utils_rules.get_propagated_boost_dict_fuseky_optimized_BAYES(sources_dataItemValues,
-					                                                                         eligible_rules, R_bayes,
-					                                                                         valid_values_for_r_and_d,
-					                                                                         ancestors,
-					                                                                         True)
+				# load facts
+				header = False
+				sources_dataItemValues = utils_dataset.load_facts_real_world(facts_file, header, ancestors)
+				D = list(sources_dataItemValues.keys())
+				# compute (1) all the facts that are claimed by a source and (2) all the sources that claim a specific fact
+				# (1) set of facts that are claimed by a specific source < key = source id, value = set of facts (dataitem + value) >
+				# (2) all the sources that claim a specific fact <key = dataitem + value, value = set of source ids>
+				print("Info about claims .... loading")
+				fact_and_source_info = utils_dataset.load_fact_and_source_info(sources_dataItemValues)
+				F_s = fact_and_source_info[0]
+				print("Number of sources (url domains) : " + str(len(F_s)))
+				S = fact_and_source_info[1]
+				print("number of claims : " + str(len(S)))
+				if True:
+					print("Compute boost dict propagated!")
 
-				print("Adapted Sums run + RULES ")
-				gamma_list =[0.3]#[0.10, 0.25, 0.5, 0.6, 0.75, 0.9, 1.0] #0, 0.25, 0.5, 0.75,
-				threshold_list = [0.0, 0.001, 0.005, 0.01, 0.05, 0.1, 0.3, 0.5]
-				#threshold_list = [0.0]
-				for gamma_ in gamma_list:
-					print("GAMMA : " + str(gamma_))
-					trust_file_base = os.path.join(results_folder + "/" + str(gamma_), "dataset_real_world")
-					if not os.path.exists(trust_file_base):
-						os.makedirs(trust_file_base)
+					boost_dict_prop = utils_rules.get_propagated_boost_dict_fuseky_optimized_BAYES(sources_dataItemValues,
+																								 eligible_rules, R_bayes,
+																								 valid_values_for_r_and_d,
+																								 ancestors,
+																								 True)
 
-					trust_file_adapt_for_iter = os.path.join(trust_file_base ,
-						                                         "trad_trust_est_at_eac_iter_real_world.csv")
-					trust_file_adapt = os.path.join(trust_file_base, "trad_trust_est_real_world.csv")
+					print("Adapted Sums run + RULES ")
+					gamma_list =[0.3]#[0.10, 0.25, 0.5, 0.6, 0.75, 0.9, 1.0] #0, 0.25, 0.5, 0.75,
+					threshold_list = [0.0, 0.001, 0.005, 0.01, 0.05, 0.1, 0.3, 0.5]
+					#threshold_list = [0.0]
+					for gamma_ in gamma_list:
+						print("GAMMA : " + str(gamma_))
+						trust_file_base = os.path.join(results_folder + "/" + str(gamma_), "dataset_real_world")
+						if not os.path.exists(trust_file_base):
+							os.makedirs(trust_file_base)
 
-					res_a = sums_model.run_adapted_sums_and_boost_saving_iter_real_world(copy.deepcopy(T), F_s, S_prop, initial_confidence, max_iteration_number,sources_dataItemValues, trust_file_adapt_for_iter, boost_dict_prop, gamma_, "_real_world", base_dir_anal, predicate)
+						trust_file_adapt_for_iter = os.path.join(trust_file_base ,
+																	 "trad_trust_est_at_eac_iter_real_world.csv")
+						trust_file_adapt = os.path.join(trust_file_base, "trad_trust_est_real_world.csv")
 
-					if res_a:
-						T_adapt_rules = res_a[0]
-						C_adapt_rules = res_a[1]
+						res_a = sums_model.run_adapted_sums_and_boost_saving_iter_real_world(copy.deepcopy(T), F_s, S_prop, initial_confidence, max_iteration_number,sources_dataItemValues, trust_file_adapt_for_iter, boost_dict_prop, gamma_, "_real_world", base_dir_anal, predicate)
 
-						solution_folder_adapt = solution_folder_adapt_base + str(gamma_) + "/"
-						if not os.path.exists(solution_folder_adapt): os.makedirs(solution_folder_adapt)
+						if res_a:
+							T_adapt_rules = res_a[0]
+							C_adapt_rules = res_a[1]
 
-						trust_average = utils_dataset.compute_average_trustworhiness(S_prop,
-						                                                             T_adapt_rules)  # T_average is a dict with key = claim_id and
+							solution_folder_adapt = solution_folder_adapt_base + str(gamma_) + "/"
+							if not os.path.exists(solution_folder_adapt): os.makedirs(solution_folder_adapt)
 
-						descendants = predicate_info[1]
-						ancestors = predicate_info[2]
-						T_average_normalized = utils_dataset.normalize_trust_average(trust_average, ancestors,
-						                                                             descendants,
-						                                                             sources_dataItemValues)
-						##############################################################################################################
-						print("computing normalized confidence")
-						conf_adapt_norm = utils_normalize_conf.creating_normalized_for_d_estimation_optimized(D,
-						                                                                                      C_adapt_rules,
-						                                                                                      app_conf_dict)
+							trust_average = utils_dataset.compute_average_trustworhiness(S_prop,
+																						 T_adapt_rules)  # T_average is a dict with key = claim_id and
 
-						#for claim in conf_adapt_norm:
-						#	if "James G. Blaine AND was born" in claim:
-						#		print(" *** \t" + str(claim) + "\t" + str(conf_adapt_norm[claim])+ "\t" + str(C_adapt_rules[claim]))
+							descendants = predicate_info[1]
+							ancestors = predicate_info[2]
+							T_average_normalized = utils_dataset.normalize_trust_average(trust_average, ancestors,
+																						 descendants,
+																						 sources_dataItemValues)
+							##############################################################################################################
+							print("computing normalized confidence")
+							conf_adapt_norm = utils_normalize_conf.creating_normalized_for_d_estimation_optimized(D,
+																												  C_adapt_rules,
+																												  app_conf_dict)
 
-						gc.collect()
+							#for claim in conf_adapt_norm:
+							#	if "James G. Blaine AND was born" in claim:
+							#		print(" *** \t" + str(claim) + "\t" + str(conf_adapt_norm[claim])+ "\t" + str(C_adapt_rules[claim]))
+
+							gc.collect()
 
 
-						for d in sources_dataItemValues: #dictionary containing for each data item, the provided values, and the sources that provide this value
-							#sources_dataItemValues[key = dataitem] --> value = dict_ [key = value_1] --> value = set of sources for value_1
-							#                                                   dict_ [key = value_2] --> value = set of sources for value_2
-							count_dict = dict()
-							for v in sources_dataItemValues[d]:  #for each provided value (and therefore its ancestors) I count how many source provided it
-								for a in ancestors[v]:
-									for s in sources_dataItemValues[d][v]:
-										if a not in count_dict:
-											count_dict[a] = 0
-										count_dict[a] += 1
-							for v in count_dict:
-								if count_dict[v] == 1:   #when the value has been provided only by one source I put its confidence to 0.
-									C_adapt_rules[d+v] = 0
-									conf_adapt_norm[d+v] = 0
+							for d in sources_dataItemValues: #dictionary containing for each data item, the provided values, and the sources that provide this value
+								#sources_dataItemValues[key = dataitem] --> value = dict_ [key = value_1] --> value = set of sources for value_1
+								#                                                   dict_ [key = value_2] --> value = set of sources for value_2
+								count_dict = dict()
+								for v in sources_dataItemValues[d]:  #for each provided value (and therefore its ancestors) I count how many source provided it
+									for a in ancestors[v]:
+										for s in sources_dataItemValues[d][v]:
+											if a not in count_dict:
+												count_dict[a] = 0
+											count_dict[a] += 1
+								for v in count_dict:
+									if count_dict[v] == 1:   #when the value has been provided only by one source I put its confidence to 0.
+										C_adapt_rules[d+v] = 0
+										conf_adapt_norm[d+v] = 0
 
-						if TSbC_flag:
-							print(
-								"Starting selection of true values algorithm for adapt model and NORMALIZED trust average.....")
-							print("TESTING MODEL -- BestChildren -- delta = 0")
-							first_ranking_criteria = "ic"
-							second_ranking_criteria = "source_average"
-							is_coherent = True
-							solutions_dict = selection_algorithm.compute_solution_best_children_final_real_world(D, predicate_info,
-							                                                                          C_adapt_rules,
-							                                                                          conf_adapt_norm,
-							                                                                          T_average_normalized,
-							                                                                          "", k_expected,
-							                                                                          first_ranking_criteria,
-							                                                                          second_ranking_criteria, threshold_list)
+							if TSbC_flag:
+								print(
+									"Starting selection of true values algorithm for adapt model and NORMALIZED trust average.....")
+								print("TESTING MODEL -- BestChildren -- delta = 0")
+								first_ranking_criteria = "ic"
+								second_ranking_criteria = "source_average"
+								is_coherent = True
+								solutions_dict = selection_algorithm.compute_solution_best_children_final_real_world(D, predicate_info,
+																										  C_adapt_rules,
+																										  conf_adapt_norm,
+																										  T_average_normalized,
+																										  "", k_expected,
+																										  first_ranking_criteria,
+																										  second_ranking_criteria, threshold_list)
 
-							dict_solution_IC_final = solutions_dict[0]
-							save_results(dict_solution_IC_final, threshold_list, gamma_, ground)
-							print("Statistic dict_sol_IC for best chidlren")
-							for threshold in threshold_list:
-								corr = 0
-								gen = 0
-								more_spec = 0
-								err = 0
-								cont_1 = 0
-								for dataitem in sources_dataItemValues:
-									if dataitem not in ground:
-										continue
-									if dataitem not in dict_solution_IC_final[threshold]:
-										cont_1 += 0
-										continue
-									expec_sol = ground[dataitem]
-									if len(dict_solution_IC_final[threshold][dataitem]) > 0:
-										pred_sol = dict_solution_IC_final[threshold][dataitem][0]
-									else:
-										pred_sol = "None"
+								dict_solution_IC_final = solutions_dict[0]
+								save_results(dict_solution_IC_final, threshold_list, gamma_, ground)
+								print("Statistic dict_sol_IC for best chidlren")
+								for threshold in threshold_list:
+									corr = 0
+									gen = 0
+									more_spec = 0
+									err = 0
+									cont_1 = 0
+									for dataitem in sources_dataItemValues:
+										if dataitem not in ground:
+											continue
+										if dataitem not in dict_solution_IC_final[threshold]:
+											cont_1 += 0
+											continue
+										expec_sol = ground[dataitem]
+										if len(dict_solution_IC_final[threshold][dataitem]) > 0:
+											pred_sol = dict_solution_IC_final[threshold][dataitem][0]
+										else:
+											pred_sol = "None"
 
-									if pred_sol == expec_sol:
-										corr += 1
-									else:
-										if expec_sol in ancestors:
-											if pred_sol in ancestors[expec_sol]:
-												gen += 1
+										if pred_sol == expec_sol:
+											corr += 1
+										else:
+											if expec_sol in ancestors:
+												if pred_sol in ancestors[expec_sol]:
+													gen += 1
+												else:
+													if pred_sol in ancestors:
+														if expec_sol in ancestors[pred_sol]:
+															more_spec+= 1
+														else:
+															err += 1
+													else:
+														err += 1
 											else:
 												if pred_sol in ancestors:
 													if expec_sol in ancestors[pred_sol]:
-														more_spec+= 1
+														more_spec += 1
 													else:
 														err += 1
 												else:
 													err += 1
-										else:
-											if pred_sol in ancestors:
-												if expec_sol in ancestors[pred_sol]:
-													more_spec += 1
-												else:
-													err += 1
-											else:
-												err += 1
 
-								if cont_1>0:
-									print(cont_1)
-								print("TSbC_IC\t"+str(threshold) + "\t" + str(round(corr / len(ground), 4)) + "\t" + str(
-										round(gen / len(ground), 4))+ "\t" + str(round(more_spec / len(ground), 4)) + "\t" + str(round(err / len(ground), 4)) + "\t" + str(corr) + "\t" + str(
-										gen) + "\t" + str(more_spec)+ "\t" + str(err) + "\t" + str(corr + gen + err+ more_spec) + "\t" + str(
-										len(ground)))
+									if cont_1>0:
+										print(cont_1)
+									print("TSbC_IC\t"+str(threshold) + "\t" + str(round(corr / len(ground), 4)) + "\t" + str(
+											round(gen / len(ground), 4))+ "\t" + str(round(more_spec / len(ground), 4)) + "\t" + str(round(err / len(ground), 4)) + "\t" + str(corr) + "\t" + str(
+											gen) + "\t" + str(more_spec)+ "\t" + str(err) + "\t" + str(corr + gen + err+ more_spec) + "\t" + str(
+											len(ground)))
 
 
 
-					else:
-						print("Error in adapted model")
+						else:
+							print("Error in adapted model")
 
-			cont_datasets += 1
-			# elimina folder with info for belief propagation
 
-			print("End dataset ")
+				# elimina folder with info for belief propagation
+				print("End experiments")
+				import shutil
 
+				shutil.rmtree(confidence_value_computation_info_dir)
+				os.remove(dataitem_index_file)
 
 
 
